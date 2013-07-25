@@ -5,7 +5,7 @@ A simple Rack app that responds with subdivisions (states and provinces)
 when queried with an alpha2 country code.
 
 ```
-curl http://example.com/subdivisions\?country_code\=US
+% curl http://example.com/subdivisions\?country_code\=US
 {"US":[["Alaska","AK"],["Alabama","AL"],...]}
 ```
 
