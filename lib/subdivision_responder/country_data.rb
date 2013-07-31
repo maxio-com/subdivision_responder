@@ -8,6 +8,7 @@ module SubdivisionResponder
         subdivision_pairs = country.subdivisions.map do |subdivision_alpha2, subdivision_data|
           [ subdivision_data['name'], subdivision_alpha2 ]
         end
+        subdivision_pairs.sort!
         hash[country_alpha2] = subdivision_pairs
       end
       hash
