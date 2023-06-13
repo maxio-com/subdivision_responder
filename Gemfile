@@ -4,7 +4,7 @@ gem 'rack'
 gem 'countries'
 
 group :development do
-  gem "jeweler"
+  gem 'juwelier'
 end
 
 group :development, :test do
