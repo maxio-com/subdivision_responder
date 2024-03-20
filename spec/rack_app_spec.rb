@@ -24,9 +24,9 @@ describe SubdivisionResponder::RackApp do
     get "/"
     parsed_body = JSON.parse(last_response.body)
 
-    parsed_body.keys.should include("US")
-    parsed_body.keys.size.should be > 1
-    parsed_body["US"].should eql us_states_array
+    expect(parsed_body.keys).to include("US")
+    expect(parsed_body.keys.size).to be > 1
+    expect(parsed_body["US"]).to eq(us_states_array)
   end
 
   private
